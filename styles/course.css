@@ -90,6 +90,7 @@ main{
     justify-content: center;
 }
 .c li{
+    color: white;
     background-color:black;
     text-align: center;
     /* width: 100%; */
