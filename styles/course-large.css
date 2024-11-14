@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px){
+    #menu {
+        display: none;
+    }
+    .nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav a {
+        display: flex;
+    }
+    .a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .course-work{
+        flex: 2;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .country{
+        flex: 1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .c{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: space-around;
+        row-gap: 15px;
+    }
+}
