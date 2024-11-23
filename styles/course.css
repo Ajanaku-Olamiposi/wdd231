@@ -4,6 +4,11 @@ body{
     /* margin-bottom: 0; */
     /* margin: 1rem auto; */
 }
+/* header{
+    display: grid;
+    grid-template-columns: 200px auto 44px;
+    align-items: end;
+} */
 header,h2,footer{
     background-color: rgb(21, 21, 133);
 	text-align: center;
@@ -26,6 +31,7 @@ a{
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
+    cursor: pointer;
 }
 #menu::before {
 	content: "☰";
