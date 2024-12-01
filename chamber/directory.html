@@ -7,22 +7,52 @@
     <title>Ibadan Chamber Of Commerce</title>
     <meta name="description" content="Connecting all Entrepreneurs, Businesses and People in Ibadan">
     <meta name="author" content="Ajanaku Olamiposi">
+    <script src="scripts/chamber.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <script src="scripts/chamber.js" defer></script>
+    <meta property="og:title" content="Ibadan Chamber of Commerce" />
+    <meta property="og:type" content="Commercial Website" />
+    <!-- <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> -->
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />   
 </head>
 <body>
     <header>
+        <img src="images/High-Resolution-Color-Logo-on-Transparent-Background.png" height="40px" alt="Femi Johnson">
+        <section class="com">
+            <h1>IBADAN</h1>
+            <p>chamber Of commerce</p>
+        </section>
+        <button id="menu"><span class="p">Menu</span></button>
     </header>
+    <nav class="nav">
+        <a href="index.html" >Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="dicover.html">Discover</a>
+    </nav>
     <main>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <article class="grid">
+            <div id="cards"></div>
+        </article>
     </main>
     <footer>
-        <p>© <span id="currentyear"></span> | Ajanaku Olamiposi | London, Uk</p>
-        <p id="lastmodified"></p>
+        <section>
+            <p><strong>Ibadan Chamber of Commerce</strong><br>P.M.B 4011<br>info@ibadancc.org<br>08028799593</p>
+        </section>
+        <section class="social-media">
+            <a href="https://www.youtube.com"><img src="images/icons8-youtube-48.png" width="48" height="48" alt="Youtube"></a>
+            <a href="https://twitter.com"><img src="images/icons8-twitter-48.png" width="48" height="48" alt="Twitter" ></a>
+            <a href="https://www.linkedin.com"><img src="images/icons8-linkedin-logo-48.png" width="48" height="48" alt="Likeldin"></a>
+        </section>
+        <p>© <span id="currentyear"></span> | Ajanaku Olamiposi | London, Uk<br><span id="lastmodified"></span></p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px){
+    #menu {
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        font-size:larger;
+    }
+    header img{
+        margin-top: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    header h1{
+        font-size: 150px;
+        text-align: center;
+        color: rgb(70, 7, 186);
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    header p{
+        margin-top: 0;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav a{
+        border: none;
+    }
+    .list {
+        font-size: large;
+    }
+    .list section img {
+        display: block;
+    }
+    .list section {
+        grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+        gap:10px;
+    }
+    footer p{
+        padding-left: 15px;
+    }
+    .grid #cards{
+        gap:20px;
+    }
+}
