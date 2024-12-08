@@ -226,6 +226,7 @@ img {
     border: 2px solid #bbb;
     border-radius: 15px;
     padding-bottom: 10px;
+    row-gap: 0px;
 }
 .home #cards h2{
     grid-column-start: 1;
@@ -239,8 +240,8 @@ img {
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 79px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background: none;
     box-shadow: none;
     border: none;
