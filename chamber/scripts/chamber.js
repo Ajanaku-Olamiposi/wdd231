@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         Next Tomorrow: ${data.daily[2].temp.day}F<br><br>`;
     const icon = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
     img.setAttribute('src', icon);
-    img.setAttribute('alt', 'Weather Icon');
+    img.setAttribute('alt', `Weather Icon`);
     console.log('hello');
   }
 });
