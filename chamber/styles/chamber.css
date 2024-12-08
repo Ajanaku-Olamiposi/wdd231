@@ -223,7 +223,7 @@ img {
 }
 .home #cards section{
     display: grid;
-    border: 2px solid bbb;
+    border: 2px solid #bbb;
     border-radius: 15px;
     padding-bottom: 10px;
 }
