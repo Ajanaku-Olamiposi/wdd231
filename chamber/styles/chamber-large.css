@@ -73,7 +73,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         
     }
-    .home #cards p, .home #cardsa{
+    .home #cards p, .home #cards a{
         padding-left: 5px;
         font-size: x-small;
         /* background-color: aqua; */
