@@ -4,7 +4,7 @@
     "address": "123 Silicon Valley, San Francisco, CA 94105",
     "phone": "415-555-1234",
     "website": "https://www.techinnovato.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 3
   },
   {
@@ -12,7 +12,7 @@
     "address": "456 Greenway Blvd, Portland, OR 97205",
     "phone": "503-555-5678",
     "website": "https://www.greensolutio.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 2
   },
   {
@@ -20,7 +20,7 @@
     "address": "789 Wellness St, Austin, USA TX 78701",
     "phone": "512-555-9012445",
     "website": "https://www.healthfir.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 1
   },
   {
@@ -28,7 +28,7 @@
     "address": "101 Learning Ave, Boston, MA 02110",
     "phone": "617-555-3456",
     "website": "https://www.edutechpartn.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 3
   },
   {
@@ -36,7 +36,7 @@
     "address": "202 Wall Street, New York, NY 10005",
     "phone": "212-555-7890",
     "website": "https://www.financegur.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 2
   },
   {
@@ -44,7 +44,7 @@
     "address": "303 Art Blvd, Los Angeles, CA 90001",
     "phone": "323-555-2345",
     "website": "https://www.creativemin.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 1
   },
   {
@@ -52,7 +52,7 @@
     "address": "404 International Rd, Miami, FL 33101",
     "phone": "305-555-6789",
     "website": "https://www.globalventur.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 3
   },
   {
@@ -60,7 +60,7 @@
     "address": "505 Cityscape Dr, Chicago, USA, IL 60601",
     "phone": "312-555-4321",
     "website": "https://www.urbandevelop.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 2
   },
   {
@@ -68,7 +68,7 @@
     "address": "606 Innovation Way, Seattle, WA 98101",
     "phone": "206-555-8765",
     "website": "https://www.nextgente.com",
-    "image": "images/High-Resolution-Color-Logo-on-Transparent-Background.png",
+    "image": "images/logo.png",
     "membershipLevel": 1
   }
 ]

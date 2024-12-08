@@ -4,31 +4,47 @@
     }
     header{
         display: flex;
-        flex-direction: column;
-        font-size:larger;
+        flex-direction: row;
+        font-size: large;
+        /* align-items: flex-end; */
     }
-    header img{
+    .head img{
         margin-top: 5px;
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+        /* box-shadow: none;
+        background: none;
+        border: none; */
     }
-    header h1{
-        font-size: 150px;
-        text-align: center;
-        color: rgb(70, 7, 186);
-        margin-bottom: 0;
+    .head h1{
+        text-align: left;
         margin-top: 0;
     }
-    header p{
+    .com{
+        width: 80%;
+        align-self: flex-end;
+        padding-left: 60px;
+    }
+    .head p{
         margin-top: 0;
+        margin-bottom: 5px;
+        text-align: left;
     }
     .nav {
+        background-color: red;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: end;
+        padding-right: 1.5px;
+        /* width: 50%; */
     }
     .nav a{
         border: none;
+        color: black;
+        background-color: white;
+        /* border: 1px solid blue; */
+        /* border-bottom: 2px solid blue; */
     }
     .list {
         font-size: large;
@@ -40,10 +56,44 @@
         grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
         gap:10px;
     }
-    footer p{
-        padding-left: 15px;
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .grid #cards{
         gap:20px;
+    }
+
+    /* Home page */
+    .weather{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: none;
+    }
+    .home #cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .home #cards p, a{
+        padding-left: 5px;
+        /* background-color: aqua; */
+    }
+    .home #cards h2{
+        /* background-color: aqua; */
+    }
+    .home{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .hero{
+        height: 500px;
+        margin-top: 3px;
+    }
+    .home h1, .weather, .home #cards, .here{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer p, .socia-media{
+        margin-left: 0px;
     }
 }
