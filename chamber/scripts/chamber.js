@@ -127,16 +127,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const sunriseTime = new Date(data.current.sunrise * 1000);
     const sunsetTime = new Date(data.current.sunset * 1000);
     const options = { hour: '2-digit', minute: '2-digit', hour12: true };
-    currentWeather.innerHTML = `<strong>${data.current.temp}</strong>F<br>
+    currentWeather.innerHTML = `<strong>${data.current.temp}&deg</strong>F<br>
                         ${capitalizeFirstLetter(data.current.weather[0].description)}<br>
-                        High: ${data.daily[0].temp.max}F<br>
-                        Low: ${data.daily[0].temp.min}F<br>
+                        High: ${data.daily[0].temp.max}&degF<br>
+                        Low: ${data.daily[0].temp.min}&degF<br>
                         Humidity: ${data.current.humidity}<br>
                         Sunrise: ${sunriseTime.toLocaleTimeString('en-US', options)}<br>
                         Sunset: ${sunsetTime.toLocaleTimeString('en-US', options)}`;
-    weatherForecast.innerHTML = `Today: ${data.daily[0].temp.day}F<br><br>
-                        Tomorrow: ${data.daily[1].temp.day}F<br><br>
-                        Next Tomorrow: ${data.daily[2].temp.day}F<br><br>`;
+    weatherForecast.innerHTML = `Today: ${data.daily[0].temp.day}&degF<br><br>
+                        Tomorrow: ${data.daily[1].temp.day}&degF<br><br>
+                        Next Tomorrow: ${data.daily[2].temp.day}&degF<br><br>`;
     const icon = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
     img.setAttribute('src', icon);
     img.setAttribute('alt', `Weather Icon`);
