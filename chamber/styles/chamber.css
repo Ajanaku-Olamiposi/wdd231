@@ -5,6 +5,7 @@ body {
     display: flex; 
     flex-direction: column;
     align-items: center; 
+    min-height: 100vh;
 }
 header{
     width: 100%;
@@ -74,7 +75,7 @@ nav {
     font-weight: 700;
 }
 
-nav a.active { text-decoration: underline ; }
+/* nav a.active { text-decoration: underline ; } */
 .nav {
     display: none;
 }
@@ -107,6 +108,9 @@ main {
     background-color: #fff;
     font-family: Roboto, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+.thanks{
+    flex: 1;
 }
 .menu {
     margin: 1rem auto;
@@ -246,12 +250,107 @@ img {
     box-shadow: none;
     border: none;
 }
-.home #cards p, a{
+.home #cards p,.home #cards a{
     text-align: start;
+    font-size: small;
 }
 .here{
     text-align: left;
 }
 .home #cards a{
+    color: black;
+}
+
+/* JOIN PAGE */
+form{
+    text-align: left;
+    justify-self: center;
+    color: yellow;
+}
+form label{
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.18rem;
+}
+form input:required, select:required{
+    border-left: solid 3px red;
+}
+form input:required:valid{
+    border-bottom: solid 8px green
+}
+form input, textarea{
+    display: block;
+    padding: .75rem; 
+    width: 100%;
+    max-width: 255px; 
+}
+select, .submit{
+    display: block;
+    padding: .75rem; 
+    width: 100%;
+    max-width: 295px; 
+}
+.submit{
+    margin-top: 10px;
+    background-color: rgb(217, 175, 123);
+}
+.submit:hover{
+    background-color: rgb(150, 121, 86);
+}
+#level{
+    display: grid; 
+    justify-items: center;
+    gap:10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    /* background-color: #333; */
+}
+#level section{
+    background-color: yellow;
+    width: 270px; 
+    padding-bottom: 5px;
+    border-radius: 50% 50% 50% 50%;
+    animation: 3s alternate slide-in;
+}
+@keyframes slide-in {
+    from {
+      translate: 70vw 0;
+      scale: 200% 1;
+      background-color: red;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+      background-color: yellow;
+    }
+  }
+.join{
+    background-color: rgb(5, 57, 103);
+}
+dialog{
+    /* background-color: white; */
+}
+dialog button{
+    /* background-color: rgb(192, 69, 69); */
+}
+::backdrop{}
+.join h2{
+    color: yellow;
+    font-size:larger;
+}
+.thanks{
+    background-color: rgb(5, 57, 103);
+    color: yellow;
+    max-width: none;
+    align-content: center;
+}
+.thanks #results p{
+    text-align: left;
+    justify-self: center;
+    background-color: yellow;
+    padding: 20px;
+    margin: 20px;
     color: black;
 }

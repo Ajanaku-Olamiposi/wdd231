@@ -96,4 +96,32 @@
     footer p, .socia-media{
         margin-left: 0px;
     }
+
+    /* Join page */
+    .join{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+        max-width: none;
+    }
+    #level{
+        gap: 5px;
+        max-height: 100px;
+    }
+    #level section{
+        width: 350px;
+        height: 150px;
+        /* border-radius: 0%; */
+        align-content: center;
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+    form input, textarea{
+        max-width: 350px; 
+    }
+    .join h2{
+        color: yellow;
+        font-size:x-large;
+    }
 }

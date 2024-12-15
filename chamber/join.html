@@ -34,30 +34,53 @@
             <a href="dicover.html">Discover</a>
         </nav>
     </header>
-    <main class="home">
-        <div class="container">
-            <img class="hero" src="images/ibadan.jpg" height="400" alt="Femi Johnson">
-            <!-- <P class="overlay-text">The Femi Johnson Building<br>Where Business Thrives</P> -->
-        </div>
-        <h1>Home</h1>
-        <div class="weather">
-            <section>
-                <h2>Events</h2>
-            </section>
-            <section>
-                <h2>Current Weather</h2>
-                <div class="current">
-                    <img id="icon" src="a" alt="Weather Icon">
-                    <p id="currentWeather"></p>
-                </div>
-            </section>
-            <section>
-                <h2>Weather Forecast</h2>
-                <div id="weatherForecast"></div>
-            </section>
-        </div>
-        <div id="cards"></div>
-        <p class="here">Click <a href="join.html">Here</a> to become a member and start enjoying exclusive benefits 😉</p>
+    <main class="join">
+       <form method="get" action="thankyou.html" class="form">
+        <h2>Membership Application Form</h2>
+        <label for="firstName">
+            First Name:
+            <input type="text" id="firstName" name="firstName" title="Applicant's First Name" required autocomplete="given-name">
+        </label>
+        <label for="lastName">
+            Last Name:
+            <input type="text" id="lastName" name="lastName" title="Applicant's Last Name" required autocomplete="family-name">
+        </label>
+        <label for="orgTitle">
+            Organizational Title:
+            <input type="text" id="orgTitle" name="orgTitle" title="Applicant's Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+        </label>
+        <label for="email">
+            Email:
+            <input type="email" id="email" name="email" title="Applicant's Email Address" required autocomplete="email" placeholder="example@example.com">
+        </label>
+        <label for="phone">
+            Mobile Phone Number:
+            <input type="tel" id="phone" name="phone" title="Applicant's Mobile Phone Number" required autocomplete="tel">
+        </label>
+        <label for="organization">
+            Organization:
+            <input type="text" id="organization" name="organization" title="Business/Organization's Name" required autocomplete="organization">
+        </label>
+        <label for="membershipLevel"> 
+            Membership Level: 
+            <select id="membershipLevel" name="membershipLevel" title="Select Membership Level" required> 
+                <option value="NP Membership">NP Membership (No fee)</option> 
+                <option value="Bronze Membership">Bronze Membership</option> 
+                <option value="Silver Membership">Silver Membership</option> 
+                <option value="Gold Membership">Gold Membership</option> 
+            </select> 
+        </label>
+        <label for="description">
+            Description:
+            <textarea id="description" title="description" name="description" rows="4" cols="50" placeholder="Write your description here..."></textarea>
+        </label>
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="submit" value="Join Us" class="submit">
+      </form> 
+      <div>
+        <h2>Membership Levels</h2>
+        <div id="level"></div>
+      </div>     
     </main>
     <footer>
         <section>
