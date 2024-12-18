@@ -124,4 +124,13 @@
         color: yellow;
         font-size:x-large;
     }
+    /* discover page */
+    .discover{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    iframe{
+        width: 350px;
+        height: 175px;
+    }
 }

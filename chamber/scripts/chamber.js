@@ -245,3 +245,40 @@ document.addEventListener('DOMContentLoaded', (event) => {
                          </p>`;
   }
 });
+// Discover page
+// Function to format the date
+function formatDate(date) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+  return new Date(date).toLocaleDateString(undefined, options);
+}
+
+// Check if there's a stored visit date
+const lastVisit = localStorage.getItem('lastVisit');
+const info = document.getElementById('info');
+const currentDate = new Date();
+
+if (lastVisit) {
+  const lastVisitDate = new Date(lastVisit);
+  const timeDifference = currentDate - lastVisitDate;
+  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+  if (daysDifference < 1) {
+    info.textContent = "Back so soon! Awesome!";
+  } else if (daysDifference === 1) {
+    info.textContent = "You last visited 1 day ago.";
+  } else {
+    info.textContent = `You last visited ${daysDifference} days ago.`;
+  }
+} else {
+  info.textContent = "Welcome! Let us know if you have any questions.";
+}
+
+// Store the current date
+localStorage.setItem('lastVisit', currentDate);
+
+
+
+
+
+
+
