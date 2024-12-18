@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   // Fetch and display weather data
-  const currentWeather = document.querySelector('#currentWeather');
-  const weatherForecast = document.querySelector('#weatherForecast');
+  const currentWeather = document.querySelector('#currentweather');
+  const weatherForecast = document.querySelector('#weatherforecast');
   const img = document.querySelector('#icon');
 
   const myKey = '6337ea04471fc12230ef37ba26af6eab';
@@ -257,24 +257,26 @@ const lastVisit = localStorage.getItem('lastVisit');
 const info = document.getElementById('info');
 const currentDate = new Date();
 
-if (lastVisit) {
-  const lastVisitDate = new Date(lastVisit);
-  const timeDifference = currentDate - lastVisitDate;
-  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-  if (daysDifference < 1) {
-    info.textContent = "Back so soon! Awesome!";
-  } else if (daysDifference === 1) {
-    info.textContent = "You last visited 1 day ago.";
+if(info){
+  if (lastVisit) {
+    const lastVisitDate = new Date(lastVisit);
+    const timeDifference = currentDate - lastVisitDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  
+    if (daysDifference < 1) {
+      info.textContent = "Back so soon! Awesome!";
+    } else if (daysDifference === 1) {
+      info.textContent = "You last visited 1 day ago.";
+    } else {
+      info.textContent = `You last visited ${daysDifference} days ago.`;
+    }
   } else {
-    info.textContent = `You last visited ${daysDifference} days ago.`;
+    info.textContent = "Welcome! Let us know if you have any questions.";
   }
-} else {
-  info.textContent = "Welcome! Let us know if you have any questions.";
+  
+  // Store the current date
+  localStorage.setItem('lastVisit', currentDate);
 }
-
-// Store the current date
-localStorage.setItem('lastVisit', currentDate);
 
 
 
