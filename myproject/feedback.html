@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Species</title>
+    <meta name="description" content="Endangered Species">
+    <meta name="author" content="Ajanaku Olamiposi Temple Album">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Endangered species</h1>
+        <!-- <p>awareness of endangered species</p> -->
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form">
+            <label>Your name*<input type="text" id="username" name="username" required></label>
+            <label>Date <input type="date" name="completedate" required></label>
+            <label for="review">Feedback:</label>
+            <textarea id="review" name="review" rows="4" cols="50" placeholder="Write your Feedback here..."></textarea>
+            <label>Overall Rating*</label>
+            <label><input type="radio" id="star1" name="star" required ><span>☆</span></label>
+            <label><input type="radio" id="star2" name="star" required ><span>☆☆</span></label>
+            <label><input type="radio" id="star3" name="star" required ><span>☆☆☆</span></label>
+            <label><input type="radio" id="star4" name="star" required ><span>☆☆☆☆</span></label>
+            <label><input type="radio" id="star5" name="star" required ><span>☆☆☆☆☆</span></label>  
+            <label>Donation(optional)
+                <select id="product" name="product" required>
+                   <option value="" disabled selected>Select an amount...</option>
+                </select>
+            </label>  
+            <div><input type="submit" value="Submit Feedback/Donation Amount"></div>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Ajanaku Olamiposi | Ibadan, Nigeria.</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
