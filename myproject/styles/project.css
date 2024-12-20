@@ -91,6 +91,7 @@ main a{
 }
 .form input[type='text'],
 .form input[type='date'],
+.form input[type='email'],
 .form select
 {
     background-color: white;
@@ -99,7 +100,6 @@ main a{
     padding: .75rem; 
     width: 255px; 
 }
-
 .form textarea{
     width: 275px;
 }
@@ -154,4 +154,8 @@ iframe{
 }
 .p{
 	font-size: 1.0rem;
+}
+#results{
+	background-color: white;
+	padding: 10px;
 }

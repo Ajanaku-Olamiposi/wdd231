@@ -26,7 +26,7 @@ if (selectElement) {
 
   products.forEach(product => {
     const option = document.createElement('option');
-    option.value = product.id;
+    option.value = product.price;
     option.textContent = product.price;
     selectElement.appendChild(option);
   });
@@ -55,12 +55,9 @@ if (showInfo) {
       return result;
     }
 
-    showInfo.innerHTML = `<p>First name: ${show('username')}<br>
-                          Last name: ${show('lastName')}<br>
-                          Email: ${show('email')}<br>
-                          Mobile number: ${show('phone')}<br>
-                          Business name: ${show('organization')}<br>
-                          Submission Date: ${show('timestamp')}<br>
+    showInfo.innerHTML = `<p>Name: ${show('username')}<br>
+                          Donation Amount: ${show('product')}<br>
+                          Email: ${show('email')}
                          </p>`;
   } else {
     console.log('No query parameters found in the URL');
