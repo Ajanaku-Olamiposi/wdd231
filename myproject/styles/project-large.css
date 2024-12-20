@@ -58,4 +58,19 @@
     .co{
         margin-bottom: 10px;
     }
+    main{
+        max-width: 750px;
+        align-self: center;
+        padding: 0px;
+    }
+    .about{
+
+        flex-direction: row;
+    }
+    .co{
+        padding-left: 15px;
+    }
+    .ab{
+        border-right: 1px solid black;
+    }
 }
