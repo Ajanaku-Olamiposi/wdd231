@@ -36,7 +36,7 @@ const buttons = [
         sign: '9'
     },
     {
-        sign: 'x',
+        sign: '*',
         class: 'sig2'
     },
     {
@@ -80,16 +80,27 @@ const buttons = [
     },
 ]
 
-const hiddenInput = document.querySelector('#hiddenInput')
+const hiddenInput = document.querySelector('#hiddenInput');
 const factors = document.querySelector('.factors');
+const ans = document.querySelector('.ans');
 
 buttons.forEach(button => {
     const factor = document.createElement('p');
     factor.textContent = button.sign;
     factor.classList.add(button.class);
 
-    factor.addEventListener('click', function(){
-        hiddenInput.value += button.sign;
+    factor.addEventListener('click', function() {
+        if (button.sign != '='){
+            hiddenInput.value += button.sign;
+        }
+        else{
+            try {
+                const result = eval(hiddenInput.value);
+                ans.textContent = result;
+            } catch (error) {
+                ans.textContent = 'Invalid expression';
+            }
+        }
     });
 
     factors.appendChild(factor);
