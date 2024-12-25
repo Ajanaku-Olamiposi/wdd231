@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+header{
+
+}
+main {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    gap: 5px;
+}
+.console {
+    background-color: white;
+    width: 98%; 
+    border-bottom: 1px solid rgb(220, 220, 220);
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+label {
+    width: 75%; 
+    justify-self: center;
+}
+input {
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    border: none; 
+    outline: none;
+}
+.ans, .footer{
+    text-align: right;
+    width: 75%; 
+    justify-self: center;
+}
+.factors{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 90%; 
+    justify-self: center;
+}
+.factors p{
+    font-size: larger;
+    border: 1px solid gray;
+    border-radius: 50% 50% 50% 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    margin: 5px;
+}
+.factors p:hover{
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+.sig1, .sig2{
+    background-color: rgb(220, 220, 220);
+}
+.sig1{
+    color: red;
+}
+.sig2{
+    color: rgb(9, 135, 9);
+}
+.sig3{
+    background-color: rgb(8, 210, 8);
+    color: white;
+}
+.sig3:hover{
+    background-color: rgb(16, 181, 16);
+}
