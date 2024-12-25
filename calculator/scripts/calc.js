@@ -90,16 +90,20 @@ buttons.forEach(button => {
     factor.classList.add(button.class);
 
     factor.addEventListener('click', function() {
-        if (button.sign != '='){
+        if (button.sign != '=' && button.sign != 'C'){
             hiddenInput.value += button.sign;
         }
-        else{
+        else if(button.sign == '='){
             try {
                 const result = eval(hiddenInput.value);
                 ans.textContent = result;
             } catch (error) {
                 ans.textContent = 'Invalid expression';
             }
+        }
+        else{
+            hiddenInput.value = ''
+            ans.textContent = ''
         }
     });
 
