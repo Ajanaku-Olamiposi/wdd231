@@ -56,7 +56,7 @@ input {
     align-content: center;
     margin: 5px;
 }
-.factors p:hover{
+p:hover{
     background-color: rgb(196, 196, 196);
     cursor: pointer;
 }
